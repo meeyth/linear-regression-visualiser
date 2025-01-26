@@ -19,7 +19,7 @@ learning_rate = st.sidebar.slider(
 epochs = st.sidebar.slider("Number of epochs", 10, 200, 50)
 
 # Generate synthetic data
-np.random.seed(42)
+np.random.seed(24)
 X = np.linspace(0, 10, data_size)
 y = 3 * X + 5 + np.random.normal(0, noise_level, data_size)
 
